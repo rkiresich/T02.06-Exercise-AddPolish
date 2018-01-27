@@ -11,7 +11,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 -->
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -40,32 +40,32 @@
     <!--COMPLETE-->
     <!--TODO (3) Make the width and height of the FrameLayout match_parent-->
     <!--COMPLETE-->
-<FrameLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <ScrollView
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/tv_github_search_results_json"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Make a search!"
+                android:textSize="18sp" />
+        </ScrollView>
 
         <TextView
-            android:id="@+id/tv_github_search_results_json"
+            android:id="@+id/tv_error_message_display"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Make a search!"
-            android:textSize="18sp" />
-    </ScrollView>
-    
-    <TextView
-        android:id="@+id/tv_error_message_display"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="22sp"
-        android:padding="16dp"
-        android:text="@string/error_message"
-        android:visibility="invisible"
-        />
-</FrameLayout>
+            android:textSize="22sp"
+            android:padding="16dp"
+            android:text="@string/error_message"
+            android:visibility="invisible"
+            />
+    </FrameLayout>
 
     <!--TODO (4) Add a TextView to display an error message-->
     <!--COMPLETE-->

@@ -37,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
     private TextView mSearchResultsTextView;
 
     // TODO (12) Create a variable to store a reference to the error message TextView
+    //COMPLETE
+    private TextView mErrorMessageTextView;
 
     // TODO (24) Create a ProgressBar variable to store a reference to the ProgressBar
 
@@ -51,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         mSearchResultsTextView = (TextView) findViewById(R.id.tv_github_search_results_json);
 
         // TODO (13) Get a reference to the error TextView using findViewById
+
 
         // TODO (25) Get a reference to the ProgressBar using findViewById
     }
